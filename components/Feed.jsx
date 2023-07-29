@@ -41,7 +41,7 @@ const Feed = () => {
 
     useEffect(()=>{
         filterPosts()
-    },[searchText, posts])
+    },[searchText, posts, filterPosts])
 
     const handleTagClick = (tag) => {
         setSearchText(!(tag.at(0) === '#') ? `#${tag}`:tag)
